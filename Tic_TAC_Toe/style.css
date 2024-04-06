@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #0F80E1;
+  color: white;
+  height: 60px;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  font-weight: bold;
+  font-family: 'Ephesis', cursive;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+.gameContainer {
+  background-color: white;
+  display: flex;
+  margin: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+.box {
+  border: 1px solid black;
+  font-size: 10vw;
+  cursor: pointer;
+  display: flex;
+  color: #7B5050;
+  border-color: #A808FF;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  background-color: #F8EBF8;
+}
+
+.gameInfo {
+  padding: 0px 5px;
+  margin: 0px 0px;
+  font-size: 12px;
+  color:  #0F80E1;
+  font-family: 'Baloo bhaina 2', cursive;
+}
+.info{
+  padding: 0px 5px;
+  margin: 0px 0px;
+  font-size: 20px;
+  color:  #FF5770;
+  font-family: 'Dancing Script', cursive;
+}
+
+.gameInfo h1 {
+  font-size: 2.5rem;
+  }
+
+.imgbox img {
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+.br-0 {
+  border-right: 0;
+}
+
+.bl-0 {
+  border-left: 0;
+}
+
+.bt-0 {
+  border-top: 0;
+}
+
+.bb-0 {
+  border-bottom: 0;
+}
+
+#reset {
+  margin: 0 23px;
+  padding: 3px 28px;
+  background: #F8EBF8;
+  border-color: #FC0B7D;
+  border-radius: 4px;
+  cursor: pointer;
+  color:#5148D9;
+  font-family: 'Baloo Bhaina 2', cursive;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.line{
+  width: 0;
+  height: 2px;
+  position: absolute;
+  background-color: transparent;
+  transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 950px)
+  { 
+    .gameContainer{ 
+      flex-wrap:wrap;
+    }
+    
+    .gameInfo{
+      margin-top: 34px;
+    }
+    
+    .container {
+       display: grid;
+       grid-template-rows: repeat(3, 20vw);
+       grid-template-columns: repeat(3, 20vw);
+    }
+  }  
